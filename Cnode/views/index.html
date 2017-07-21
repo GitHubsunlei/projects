@@ -1,0 +1,97 @@
+<% include ./layout/header.html%>
+    <div id="main">
+<% include ./layout/sider.html%>  
+        <div id="content">
+            <div class="panel">
+                <div class="header">
+                    <a href="/?tab=all" class="topic-tab current-tab">全部</a>
+                    <a href="/?tab=good" class="topic-tab ">精华</a>
+                    <a href="/?tab=share" class="topic-tab ">分享</a>
+                    <a href="/?tab=ask" class="topic-tab ">问答</a>
+                    <a href="/?tab=job" class="topic-tab ">招聘</a>
+                    <a href="/?tab=dev" class="topic-tab ">客户端测试</a>
+                </div>
+                <div class="inner no-padding">
+                    <div id="topic_list">
+<!-- [ { _id: 596865d62d75792224b327c1,
+    title: '1111',
+    content: '<p>111111</p>',
+    uid:
+     { _id: 596865bb2d75792224b327c0,
+       userpic: '20170714143349dg5jasssrk.jpg' },
+    __v: 0,
+    lastUser:
+     { _id: 596865bb2d75792224b327c0,
+       userpic: '20170714143349dg5jasssrk.jpg' },
+    lastTime: 2017-07-14T06:34:41.385Z,
+    reply: [ 596866012d75792224b327c2 ],
+    reTime: 2017-07-14T06:33:58.099Z,
+    viewNum: 3 }] -->
+                    <%topicD.forEach(function(item){%>
+                    <!-- <%console.log(item)%> -->
+                        <div class="cell">
+                            <a class="user_avatar pull-left" href="/topic/show/<%=item._id%>">
+                                <img src="uploads/<%=item.uid.userpic?item.uid.userpic:'default.jpg'%>" title="lellansin">
+                            </a>
+                            <span class="reply_count pull-left">
+                                <span class="count_of_replies" title="回复数">170</span>
+       
+                                <span class="count_seperator">/</span>
+                                <span class="count_of_visits" title="点击数">70145</span>
+                            </span>
+                            <a class="last_time pull-right" href="/topic/58ad76db7872ea0864fedfcc#595db3761b534b4408190a1a">
+
+                            <%if(item.lastUser){%>
+                                        <img src="uploads/<%=item.lastUser.userpic?item.lastUser.userpic:'default.jpg'%>" title="lellansin" style="width:40px">  
+                                        <span class="last_active_time"><%=Time(item.lastTime)%></span>           
+                                <%}%>
+                               
+                                
+                            </a>
+                            <div class="topic_title_wrapper">
+                                <span class="put_top">置顶</span>
+                                <a class="topic_title" href="/topic/show/<%=item._id%>" title="饿了么大前端 Node.js 进阶教程">
+                                <%=item.title%></a>
+                            </div>
+                        </div>
+<%})%>
+<!-- <%console.log(page,pageMax)%> -->
+
+                    </div>
+                    <div class="pagination" current_page="1">
+                        <ul>
+                        <%if(page==1){%>
+                            <li class="disabled"><a>«</a></li>
+                        <%}else{%>
+                            <li class="disabled"><a href="/?page=1">«</a></li>
+                        <%}%>
+                        <%if(page>=4){%>
+                             <li><a>...</a></li>
+                        <%}%>
+                        <%
+                            var p=parseInt(page)+2;
+                            if(p<5){
+                                p=5;
+                            };
+                        %>
+                        <%for(var i=page-2;i<=p;i++){
+                            if(i<1||i>pageMax){
+                                continue;
+                            }
+                        %>
+                             <li><a href="/?page=<%=i%>"><%=i%></a></li>
+                        <%}%>
+                        <%if(parseInt(page)>4){%>
+                            <li><a>...</a></li>
+                        <%}%>
+                            <li><a href="/?page=<%=pageMax%>">»</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="backtotop" style="top: 341px; right: 0px;">回到顶部</div>
+<% include ./layout/footer.html%>
+ 
+ 

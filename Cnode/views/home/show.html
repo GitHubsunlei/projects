@@ -1,0 +1,280 @@
+<% include ../layout/header.html%>
+
+
+  <script src="/js/ueditor/ueditor.config.js"></script>
+  <script src="/js/ueditor/ueditor.all.min.js"></script>
+
+  <!-- 引入语言包 -->
+  <script src="/js/ueditor/lang/zh-cn/zh-cn.js"></script>
+<div id="main">
+
+
+  <div id="sidebar">
+  <div class="panel">
+    <div class="header">
+      <span class="col_fade">作者</span>
+    </div>
+    <div class="inner">
+      <div class="user_card">
+  <div>
+    <a class="user_avatar" href="/user/Mesea">
+      <img src="/uploads/<%=user.userpic?user.userpic:'default.jpg'%>" title="Mesea">
+    </a>
+    <span class="user_name"><a class="dark" href="/user/Mesea"><%=user.uname%></a></span>
+
+    <div class="board clearfix">
+      <div class="floor">
+        <span class="big"><%='积分：'+user.gold%></span>
+      </div>
+    </div>
+    <div class="space clearfix"></div>
+    <span class="signature">
+       <%=user.mark%>
+    </span>
+  </div>
+</div>
+
+
+<!-- <%=console.log(topicData)%> -->
+
+    </div>
+  </div>
+
+  
+    
+<div class="panel">
+  <div class="inner ads">
+
+    
+      
+      <a href="https://cn.100offer.com/how-it-works/?utm_source=cnodejs&amp;utm_medium=display&amp;utm_campaign=cnodejs_20170704&amp;utm_content=find_new_job&amp;campaign_code=cnodejs" target="_blank" class="banner sponsor_outlink" data-label="100offer">
+        <img src="//dn-cnode.qbox.me/FsR9I5_VnOCd_uwrLpNfY42357f7">
+      </a>
+    
+      
+        <div class="sep10"></div>
+      
+      <a href="https://alinode.aliyun.com/?ref=cnode" target="_blank" class="banner sponsor_outlink" data-label="alinode">
+        <img src="//dn-cnode.qbox.me/Fn4D6BhOTz1IswvmzeZ1q7QW1ls_">
+      </a>
+    
+      
+        <div class="sep10"></div>
+      
+      <a href="http://www.ucloud.cn/site/active/gift.html?utm_source=cnodejs&amp;utm_medium=content_pic_pc&amp;utm_campaign=multicloud&amp;utm_content=gift&amp;ytag=cnodejs" target="_blank" class="banner sponsor_outlink" data-label="ucloud-banner">
+        <img src="//dn-cnode.qbox.me/FgQS-GQDfqwAD_v0NuhyYUOUk5MG">
+      </a>
+    
+      
+        <div class="sep10"></div>
+      
+      <a href="https://www.shiyanlou.com/contests/lou11/challenges?source=cnode" target="_blank" class="banner sponsor_outlink" data-label="shiyanlou">
+        <img src="//dn-cnode.qbox.me/FsfwbID-Q3D4leyA7FF_U8VxRQpT">
+      </a>
+    
+  </div>
+</div>
+
+  
+
+  <div class="panel">
+    <div class="header">
+      <span class="col_fade">作者其它话题</span>
+    </div>
+    <div class="inner">
+      
+      <ul class="unstyled">
+        <li>
+  <div><a class="dark topic_title" href="/topic/59633d4aa4de5625080fe275" title="dasfghjkl/">dasfghjkl/</a>
+  </div>
+</li>
+<li>
+  <div><a class="dark topic_title" href="/topic/595f4e67d1d54a0a0890b584" title="dssfghjkljfsadfghjkl;;hgfsasdfhjnmn,.">dssfghjkljfsadfghjkl;;hgfsasdfhjnmn,.</a>
+  </div>
+</li>
+<li>
+  <div><a class="dark topic_title" href="/topic/5955aff1984e31dd458c15d3" title="测试测试测试测试测试测试测试测试测试测试测试测试">测试测试测试测试测试测试测试测试测试测试测试测试</a>
+  </div>
+</li>
+
+      </ul>
+      
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="header">
+      <span class="col_fade">无人回复的话题</span>
+    </div>
+    <div class="inner">
+      
+      <ul class="unstyled">
+        <li>
+  <div><a class="dark topic_title" href="/topic/59633825d1d54a0a0890b649" title="mongodb 能不能实现象mysql 这样的功能.">mongodb 能不能实现象mysql 这样的功能.</a>
+  </div>
+</li>
+<li>
+  <div><a class="dark topic_title" href="/topic/596337e9a4de5625080fe272" title="基于React+Redux+react-redux+styled-components+immutablejs的高性能瀑布流项目Anthem">基于React+Redux+react-redux+styled-components+immutablejs的高性能瀑布流项目Anthem</a>
+  </div>
+</li>
+<li>
+  <div><a class="dark topic_title" href="/topic/59632d1210d696af07768b42" title="聊天室前端应用开发React + Redux + Socket.io + Material-UI + Webpack适合新手学习">聊天室前端应用开发React + Redux + Socket.io + Material-UI + Webpack适合新手学习</a>
+  </div>
+</li>
+<li>
+  <div><a class="dark topic_title" href="/topic/59631e9dd1d54a0a0890b640" title="在webpack打包vue文件中，每个vue文件当作模块是怎么处理的">在webpack打包vue文件中，每个vue文件当作模块是怎么处理的</a>
+  </div>
+</li>
+<li>
+  <div><a class="dark topic_title" href="/topic/5960a411a4de5625080fe1fc" title="前阵子做项目封装的处理excel的模块">前阵子做项目封装的处理excel的模块</a>
+  </div>
+</li>
+
+      </ul>
+      
+    </div>
+  </div>
+</div>
+
+<div id="content">
+  <div class="panel">
+    <div class="header topic_header">
+      <span class="topic_full_title">
+            <%=topicData[0].title%>
+      </span>
+      <div class="changes">
+        <span>
+          发布于<%=Time(topicData[0].reTime)%>
+        </span>
+        <span>
+          作者 <a href="/user/Mesea"><%=user.uname%></a>
+        </span>
+        <span>
+          <%=topicData[0].viewNum%>次浏览
+        </span>
+        
+          <span> 来自 客户端测试</span>
+        
+
+        
+          <input class="span-common span-success pull-right collect_btn" type="submit" value="收藏" action="collect">
+        
+
+      </div>
+      
+      <div id="manage_topic">
+        
+          
+          <a href="/topic/596343c3d1d54a0a0890b654/edit">
+            <i class="fa fa-lg fa-pencil-square-o" title="编辑"></i></a>
+          <a href="javascript:;" data-id="596343c3d1d54a0a0890b654" class="delete_topic_btn">
+             <i class="fa fa-lg fa-trash" title="删除"></i></a>
+          
+        
+
+
+      </div>
+      
+    </div>
+    <div class="inner topic">
+
+      <div class="topic_content">
+         <%-topicData[0].content%>
+      </div>
+    </div>
+ 
+
+<div class="cell reply_area reply_item
+  " reply_id="596343d71b534b4408190bb6" reply_to_id="" id="596343d71b534b4408190bb6">
+  <%replyData.forEach(function(item){%>  
+  <div class="author_content">
+    <a href="/user/Mesea" class="user_avatar">
+     <img src="/uploads/<%=item.uid.userpic?item.uid.userpic:'default.jpg'%>" alt="" style="width:30px;height:30px;">
+    </a>
+    <div class="user_info">
+      <a class="dark reply_author" href="/user/Mesea"><%=item.uid.uname%></a>
+      <a class="reply_time" href="#596343d71b534b4408190bb6"><%=item.lou%>楼•<%=Time(item.reTime)%></a>
+        <span class="reply_by_author">作者</span>
+      
+    </div>
+    <div class="user_action">
+      <span>
+        <i class="fa up_btn fa-thumbs-o-up invisible" title="喜欢"></i>
+        <span class="up-count">
+          
+        </span>
+      </span>
+      <a href="/reply/596343d71b534b4408190bb6/edit" class="edit_reply_btn">
+        <i class="fa fa-pencil-square-o" title="编辑"></i>
+      </a>
+      <a href="javascript:void(0);" class="delete_reply_btn">
+        <i class="fa fa-trash" title="删除"></i>
+      </a>
+      <span>
+          <i class="fa fa-reply reply2_btn" title="回复"></i>
+      </span>
+    </div>
+  </div>
+  <div class="reply_content from-Mesea">
+    <div class="markdown-text">
+          <%-item.content%>
+    </div>
+  </div>
+<%})%>
+</div>
+    <div class="panel">
+    <div class="header">
+      <span class="col_fade">添加回复</span>
+    </div>
+    <div class="inner reply">
+      <form id="reply_form" action="/topic/reply" method="post">
+       <textarea required id="editor" name="content" style="width:900px;min-height:300px" placeholder="请输入内容"></textarea>
+        <input type="hidden" name="tid" id="_csrf" value="<%=topicData[0]._id%>">
+
+        <div class="editor_buttons">
+              <input class="span-primary submit_btn" type="submit" data-loading-text="回复中.." value="回复">
+         </div>
+      </form>
+    </div>
+ </div>
+  <div class="clearfix">
+    <div class="reply2_area">
+      
+      <form class="reply2_form" action="/596343c3d1d54a0a0890b654/reply" method="post">
+            <div class="editor_buttons">
+              <input class="span-primary reply2_submit_btn submit_btn" type="submit" data-id="596343d71b534b4408190bb6" data-loading-text="回复中.." value="回复">
+            </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+  
+
+
+
+
+<div class="replies_history" style="display: none;">
+  <div class="inner_content"></div>
+  <div class="anchor"></div>
+</div>
+
+<!-- 预览模态对话框 -->
+<div class="modal fade" id="preview-modal">
+  <div class="modal-body" style="max-height: initial;">
+    <img src="" alt="点击内容或者外部自动关闭图片预览" id="preview-image">
+  </div>
+</div>
+
+
+
+
+
+<script>
+  // 实例化编辑器 -- 该位置的editor就是上面的文本域的id
+  var ue = UE.getEditor('editor');
+</script>
+  </div>
+</div>
+
+<% include ../layout/footer.html%>

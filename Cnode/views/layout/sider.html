@@ -1,0 +1,257 @@
+<div id="sidebar">
+<%if(user){%>
+    <div class="panel">
+        <div class="header">
+            <span class="col_fade">个人信息</span>
+        </div>
+        <div class="inner">
+            <div class="user_card">
+                <div>
+                    <a class="user_avatar" href="/user/Mesea">
+                        <img src="/uploads/<%=user.userpic?user.userpic:'default.jpg'%>" title="Mesea">
+                    </a>
+                    <span class="user_name"><a class="dark" href="/user/Mesea"><%=user.uname%></a></span>
+                    <div class="board clearfix">
+                        <div class="floor">
+                            <span class="big"><%="积分："+user.gold%></span>
+                        </div>
+                    </div>
+                    <div class="space clearfix"></div>
+                    <span class="signature"><%=user.mark?user.mark:"这家伙很懒！！！"%></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel">
+        <div class="inner">
+            <a href="/topic/create" id="create_topic_btn">
+                <span class="span-success">发布话题</span>
+            </a>
+        </div>
+    </div>
+<%}else{%>
+
+ <div class="panel">
+        <div class="inner">
+            <p>CNode：Node.js专业中文社区</p>
+            <div>
+                您可以
+                <a href="/users/login">登录</a> 或
+                <a href="/users/reg">注册</a> , 也可以
+                <a href="/auth/github">
+                    <span class="span-info">
+            通过 GitHub 登录
+          </span>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="panel">
+        <div class="inner ads">
+            <a href="https://cn.100offer.com/how-it-works/?utm_source=cnodejs&amp;utm_medium=display&amp;utm_campaign=cnodejs_20170704&amp;utm_content=find_new_job&amp;campaign_code=cnodejs" target="_blank" class="banner sponsor_outlink" data-label="100offer">
+                <img src="//dn-cnode.qbox.me/FsR9I5_VnOCd_uwrLpNfY42357f7">
+            </a>
+            <div class="sep10"></div>
+            <a href="https://alinode.aliyun.com/?ref=cnode" target="_blank" class="banner sponsor_outlink" data-label="alinode">
+                <img src="//dn-cnode.qbox.me/Fn4D6BhOTz1IswvmzeZ1q7QW1ls_">
+            </a>
+            <div class="sep10"></div>
+            <a href="http://www.ucloud.cn/site/active/gift.html?utm_source=cnodejs&amp;utm_medium=content_pic_pc&amp;utm_campaign=multicloud&amp;utm_content=gift&amp;ytag=cnodejs" target="_blank" class="banner sponsor_outlink" data-label="ucloud-banner">
+                <img src="//dn-cnode.qbox.me/FgQS-GQDfqwAD_v0NuhyYUOUk5MG">
+            </a>
+            <div class="sep10"></div>
+            <a href="https://www.shiyanlou.com/contests/lou11/challenges?source=cnode" target="_blank" class="banner sponsor_outlink" data-label="shiyanlou">
+                <img src="//dn-cnode.qbox.me/FsfwbID-Q3D4leyA7FF_U8VxRQpT">
+            </a>
+        </div>
+    </div>
+    <div class="panel">
+        <div class="header">
+            <span class="col_fade">友情社区</span>
+        </div>
+        <div class="inner">
+            <ol class="friendship-community">
+                <li>
+                    <a href="https://ruby-china.org/" target="_blank">
+                        <img src="//o4j806krb.qnssl.com/public/images/ruby-china-20150529.png">
+                    </a>
+                </li>
+                <div class="sep10"></div>
+                <li>
+                    <a href="http://golangtc.com/" target="_blank">
+                        <img src="//o4j806krb.qnssl.com/public/images/golangtc-logo.png">
+                    </a>
+                </li>
+                <div class="sep10"></div>
+                <li>
+                    <a href="http://phphub.org/" target="_blank">
+                        <img src="//o4j806krb.qnssl.com/public/images/phphub-logo.png">
+                    </a>
+                </li>
+                <div class="sep10"></div>
+                <li>
+                    <a href="https://testerhome.com/" target="_blank">
+                        <img src="//dn-cnode.qbox.me/FjLUc7IJ2--DqS706etPQ1EGajxK">
+                    </a>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="panel">
+        <div class="header">
+            <span class="col_fade">客户端二维码</span>
+        </div>
+        <div class="inner cnode-app-download">
+            <img width="200" src="//dn-cnode.qbox.me/FtG0YVgQ6iginiLpf9W4_ShjiLfU">
+            <br>
+            <a href="https://github.com/soliury/noder-react-native" target="_blank">客户端源码地址</a>
+        </div>
+    </div>
+   
+<%}%>
+
+
+
+
+    <div class="panel">
+        <div class="inner ads">
+            <a href="https://www.shiyanlou.com/contests/lou11/challenges?source=cnode" target="_blank" class="banner sponsor_outlink" data-label="shiyanlou">
+                <img src="//dn-cnode.qbox.me/FsfwbID-Q3D4leyA7FF_U8VxRQpT">
+            </a>
+            <div class="sep10"></div>
+            <a href="https://cn.100offer.com/how-it-works/?utm_source=cnodejs&amp;utm_medium=display&amp;utm_campaign=cnodejs_20170704&amp;utm_content=find_new_job&amp;campaign_code=cnodejs" target="_blank" class="banner sponsor_outlink" data-label="100offer">
+                <img src="//dn-cnode.qbox.me/FsR9I5_VnOCd_uwrLpNfY42357f7">
+            </a>
+            <div class="sep10"></div>
+            <a href="https://alinode.aliyun.com/?ref=cnode" target="_blank" class="banner sponsor_outlink" data-label="alinode">
+                <img src="//dn-cnode.qbox.me/Fn4D6BhOTz1IswvmzeZ1q7QW1ls_">
+            </a>
+            <div class="sep10"></div>
+            <a href="http://www.ucloud.cn/site/active/gift.html?utm_source=cnodejs&amp;utm_medium=content_pic_pc&amp;utm_campaign=multicloud&amp;utm_content=gift&amp;ytag=cnodejs" target="_blank" class="banner sponsor_outlink" data-label="ucloud-banner">
+                <img src="//dn-cnode.qbox.me/FgQS-GQDfqwAD_v0NuhyYUOUk5MG">
+            </a>
+        </div>
+    </div>
+    <div class="panel">
+        <div class="header">
+            <span class="col_fade">无人回复的话题</span>
+        </div>
+        <div class="inner">
+            <ul class="unstyled">
+                <li>
+                    <div><a class="dark topic_title" href="/topic/595d96401b534b4408190a0a" title="想问下关于mongodb查询的一个问题，已经找了很久都没找到合适的答案">想问下关于mongodb查询的一个问题，已经找了很久都没找到合适的答案</a>
+                    </div>
+                </li>
+                <li>
+                    <div><a class="dark topic_title" href="/topic/595cf08fd1d54a0a0890b4c4" title="初学Vue还请大神指教">初学Vue还请大神指教</a>
+                    </div>
+                </li>
+                <li>
+                    <div><a class="dark topic_title" href="/topic/595cb9bea4de5625080fe102" title="Vue 全家桶 + Express 实现的博客（后端API全部自己手写，很适合刚学习vue以及express的小伙伴学习）">Vue 全家桶 + Express 实现的博客（后端API全部自己手写，很适合刚学习vue以及express的小伙伴学习）</a>
+                    </div>
+                </li>
+                <li>
+                    <div><a class="dark topic_title" href="/topic/595c25dc10d696af077689c9" title="新手入门：微信小程序开发实践-课程表">新手入门：微信小程序开发实践-课程表</a>
+                    </div>
+                </li>
+                <li>
+                    <div><a class="dark topic_title" href="/topic/595c251e1b534b4408190989" title="新手入门：基于 react.js 技术栈构建的纯前端SPA项目框架最佳实践">新手入门：基于 react.js 技术栈构建的纯前端SPA项目框架最佳实践</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="panel">
+        <div class="header">
+            <span class="col_fade">积分榜</span> &nbsp;
+            <a class="dark" href="/users/top100">TOP 100 &gt;&gt;</a>
+        </div>
+        <div class="inner">
+            <ol>
+                <li>
+                    <span class="top_score">19030</span>
+                    <span class="user_name"><a href="/user/i5ting">i5ting</a></span>
+                </li>
+                <li>
+                    <span class="top_score">14535</span>
+                    <span class="user_name"><a href="/user/alsotang">alsotang</a></span>
+                </li>
+                <li>
+                    <span class="top_score">9330</span>
+                    <span class="user_name"><a href="/user/leapon">leapon</a></span>
+                </li>
+                <li>
+                    <span class="top_score">8700</span>
+                    <span class="user_name"><a href="/user/jiyinyiyong">jiyinyiyong</a></span>
+                </li>
+                <li>
+                    <span class="top_score">6480</span>
+                    <span class="user_name"><a href="/user/yakczh">yakczh</a></span>
+                </li>
+                <li>
+                    <span class="top_score">5380</span>
+                    <span class="user_name"><a href="/user/DevinXian">DevinXian</a></span>
+                </li>
+                <li>
+                    <span class="top_score">5180</span>
+                    <span class="user_name"><a href="/user/magicdawn">magicdawn</a></span>
+                </li>
+                <li>
+                    <span class="top_score">5020</span>
+                    <span class="user_name"><a href="/user/imhered">imhered</a></span>
+                </li>
+                <li>
+                    <span class="top_score">4560</span>
+                    <span class="user_name"><a href="/user/captainblue2013">captainblue2013</a></span>
+                </li>
+                <li>
+                    <span class="top_score">4415</span>
+                    <span class="user_name"><a href="/user/fengmk2">fengmk2</a></span>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="panel">
+        <div class="header">
+            <span class="col_fade">友情社区</span>
+        </div>
+        <div class="inner">
+            <ol class="friendship-community">
+                <li>
+                    <a href="https://ruby-china.org/" target="_blank">
+                        <img src="//o4j806krb.qnssl.com/public/images/ruby-china-20150529.png">
+                    </a>
+                </li>
+                <div class="sep10"></div>
+                <li>
+                    <a href="http://golangtc.com/" target="_blank">
+                        <img src="//o4j806krb.qnssl.com/public/images/golangtc-logo.png">
+                    </a>
+                </li>
+                <div class="sep10"></div>
+                <li>
+                    <a href="http://phphub.org/" target="_blank">
+                        <img src="//o4j806krb.qnssl.com/public/images/phphub-logo.png">
+                    </a>
+                </li>
+                <div class="sep10"></div>
+                <li>
+                    <a href="https://testerhome.com/" target="_blank">
+                        <img src="//dn-cnode.qbox.me/FjLUc7IJ2--DqS706etPQ1EGajxK">
+                    </a>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="panel">
+        <div class="header">
+            <span class="col_fade">客户端二维码</span>
+        </div>
+        <div class="inner cnode-app-download">
+            <img width="200" src="//dn-cnode.qbox.me/FtG0YVgQ6iginiLpf9W4_ShjiLfU">
+            <br>
+            <a href="https://github.com/soliury/noder-react-native" target="_blank">客户端源码地址</a>
+        </div>
+    </div>
+</div>
