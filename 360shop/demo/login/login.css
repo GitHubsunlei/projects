@@ -1,0 +1,311 @@
+/* 设置头部 */
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+#head{
+	width:100%;
+	height:52px;
+	/* background: green; */
+	margin-top:20px;
+	// overflow: hidden;
+}
+#logo{
+	width:168px;
+	height:48px;
+	/* background:yellow; */
+	margin-left:64px;
+	margin-top:2px;
+}
+ /* 设置中间部分的大图 */
+#pic{
+	width:100%;
+	height:647px;
+	/* background:green; */
+	margin-top:20px;
+	background:url(./imgs/login-bg.png) no-repeat center;
+	position: relative;
+}
+ /* 设置左侧的登录框 */
+#login{
+	width:345px;
+	height:418px;
+	background:#fff;
+	position: absolute;
+	right:60px;
+	top:114px;
+}
+#erwei{
+	width:54px;
+	height:54px;
+	float:right;
+	background:url(./imgs/uc-two-code.png)
+}
+#scan{
+	width:120px;
+	height:25px;
+	background:#fff;
+	float:right;
+	margin-top:10px;
+	background:url(./imgs/login-type-arrowBg.png) no-repeat;
+	font-size:13px;
+	line-height: 25px;
+	text-align: center;
+	color:#22AC69
+}
+#count{
+	width:295px;
+	/* height:368px; */
+	height:auto;
+/* 	background:#fff; */
+	margin-top:30px;
+	margin-left:25px;
+}
+h1{
+	font-size:20px;
+	color: #666666;
+	margin-top:10px;
+	float: left;
+}
+#zhanghao,#pwd,#yanzheng{
+	width:289px;
+	height:48px;
+	float: left;
+	margin-left:2px;
+	margin-top:40px;
+	border:1px solid #ccc
+}
+#pwd,#yanzheng{
+	margin-top:10px;
+}
+#ma{
+	width:166px;
+	height:100%;
+}
+#check{
+	width:100px;
+	height:100%;
+	background:url(./imgs/captcha.jpg);
+	float: left;
+	margin-left:20px;
+}
+#left,#left1{
+	width:18px;
+	height:18px;
+	margin-top:15px;
+	float: left;
+	background:url(./imgs/uc-account-icon.png);
+}
+#left1{
+	background:url(./imgs/uc-password-icon.png);
+}
+input[type=text],input[type=password]{
+	width:271px;
+	height:100%;
+	float: left;
+	border:none;
+	ontline:none;
+}
+#findPwd{
+	width:100%;
+	height:20px;
+	/* background:green; */
+	float: left;
+	margin-top:20px;
+}
+#findPwd>a{
+	font-size: 14px;
+	color:#7A7E80;
+}
+#findPwd>a:hover{
+	color:#22AC69;
+	border-bottom:1px solid #22AC69;
+}
+#findPwd>a:first-child{
+	float: left;
+}
+#findPwd>a:last-child{
+	float: right;
+}
+input[type=submit]{
+	width:100%;
+	height:38px;
+	background:#22AC69;
+	border-radius:10px;
+	float: left;
+	color:#FFFFFF;
+}
+#other{
+	width:100%;
+	height:30px;
+	float: left;
+	margin-top:20px;
+	color:#666;
+	line-height: 30px;
+}
+#other>span{
+	display: inline-block;
+	float: left;
+}
+#other>a{
+	display: block;
+	width:24px;
+	height:24px;
+	background:green;
+	float: left;
+	margin-left:6px;
+	margin-top:3px;
+}
+#other>a:nth-child(2){
+	background:url(./imgs/third-login-icon.png);
+	background-position:-27px 0px;
+}
+#other>a:nth-child(2):hover{
+	background:url(./imgs/third-login-icon.png);
+}
+#other>a:nth-child(3){
+	background:url(./imgs/third-login-icon.png);
+	background-position:-27px -27px;
+}
+#other>a:nth-child(3):hover{
+	background:url(./imgs/third-login-icon.png);
+	background-position:0px -27px;
+}
+#other>a:nth-child(4){
+	background:url(./imgs/third-login-icon.png);
+	background-position:-27px -54px;
+}
+#other>a:nth-child(4):hover{
+	background:url(./imgs/third-login-icon.png);
+	background-position:0px -54px;
+}
+#other>a:nth-child(5){
+	background:url(./imgs/third-login-icon.png);
+	background-position:-27px -81px;
+}
+#other>a:nth-child(5):hover{
+	background:url(./imgs/third-login-icon.png);
+	background-position:0px -81px;
+}
+#other>a:nth-child(6){
+	background:url(./imgs/third-login-icon.png);
+	background-position:-27px -108px;
+}
+#other>a:nth-child(6):hover{
+	background:url(./imgs/third-login-icon.png);
+	background-position:0px -108px;
+}
+#other>a:nth-child(7){
+	background:url(./imgs/third-login-icon.png);
+	background-position:-27px -136px;
+}
+#other>a:nth-child(7):hover{
+	background:url(./imgs/third-login-icon.png);
+	background-position:0px -136px;
+}
+/* 登录框结束部分 */
+/* 设置广告部分 */
+#ad{
+	width:150px;
+	height: 200px;
+	background:url(./imgs/qrcode-pop-bg.png);
+	position: absolute;
+	bottom:0;
+	left:60px;
+}
+#title{
+	font-size: 14px;
+	color:#009900;
+	text-align: center;
+	margin-top:10px;
+}
+#ad>font{
+	position: absolute;
+	right:4px;
+	top:0px;
+	cursor: pointer;
+}
+#ad>img{
+	margin-left:16px;
+	margin-top:10px;
+}
+#ad>p{
+	text-align: center;
+	font-size:14px ;
+}
+/* 广告部分结束 */
+/* 设置大图后面的内容 */
+.help{
+	width:240px;
+	height:60px;
+	border:2px solid #ccc;
+	margin-top:30px;
+	color:#666;
+	float: left;
+	margin-left:70px;
+}
+.help>span{
+	display: block;
+	width:36px;
+	height:36px;
+	background:yellow;
+	float: left;
+	margin:12px 0px;
+	margin-left:20px;
+	background:url(./imgs/go-complaint-gray.png)
+}
+.help p{
+	float: left;
+	margin-top:8px;
+	margin-left:10px;
+}
+.help:hover p{
+	color:#22AC69;
+}
+.help:hover span{
+	background:url(./imgs/go-complaint-green.png);
+}
+.help>.no1{
+	background:url(./imgs/frequent-question-icon.png);
+}
+.help:hover .no1{
+	background:url(./imgs/frequent-question-icon-green.png);
+}
+.help>.no2{
+	background:url(./imgs/find-password-icon.png);
+}
+.help:hover .no2{
+	background:url(./imgs/find-password-icon-green.png);
+}
+.help>.no3{
+	background:url(./imgs/account-security-icon.png);
+}
+.help:hover .no3{
+	background:url(./imgs/account-security-icon-green.png);
+}
+/* 设置大图下面部分结束 */
+/* 设置最后页脚的部分 */
+#foot{
+	width:100%;
+	height:150px;
+	float: left;
+	margin-top:20px;
+	color:#666;
+}
+#foot p{
+	text-align: center;
+	margin-top:10px;
+	position: relative;
+}
+#foot p span{
+	position: absolute;
+	width:20px;
+	height:20px;
+	margin-top:10px;
+	left:530px;
+	top:-8px;
+	background:url(./imgs/wangan-icon.png);
+}

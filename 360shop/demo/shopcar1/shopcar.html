@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>购物车</title>
+	<link rel="stylesheet" href="./shopcar.css">
+</head>
+<body>
+	<!-- 头部导航 -->
+	<div id="nav">
+		<div id="nav_content">
+			<a href="E:\360shop\demo\list\list.html">手机360商城</a>
+			<ul>
+				<li>我的订单</li>
+				<li>唯美宇爷
+					<div class="xla">
+						<dl>
+							<dt>唯美宇爷</dt>
+							<dd>我的订单</dd>
+							<dd>我的优惠券</dd>
+							<dd>我的喜欢</dd>
+							<dd>收货地址</dd>
+							<dd>账号设置</dd>
+							<dd>退出登录</dd>
+						</dl>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 头部导航部分结束 -->
+	<!-- logo部分开始 -->
+	<div id="logo">
+		<div id="logo_left">
+			<img src="./imgs/360malllogo.png" alt="">
+		</div>
+	</div>
+	<!-- logo部分结束 -->
+	<!-- 主体部分开始 -->
+	<div id="content">
+		<h3>我的购物车</h3>
+		<div id="goods">
+			<div id="goods_tit">
+				<span>配送至：</span>
+				<span>北京朝阳区三环以内</span>
+			</div>
+			<div id="tbody">
+				<div id="tbody_tit">
+					<ul>
+						<li>
+							<button id="btn1">全选</button>
+						</li>
+						<li>
+							<button type="checkbox" id="btn2">不选</button>
+						</li>
+						<li>
+							<button type="checkbox" id="btn3">反选</button>
+						</li>
+						<li>
+							<button type="checkbox" id="btn4">添加商品</button>
+						</li>
+						<li>
+							<button type="checkbox" id="btn5">添加商品1</button>
+						</li>
+						<li>商品</li>
+					</ul>
+					<ul>
+						<li>单价</li>
+						<li>数量</li>
+						<li>小计</li>
+						<li>操作</li>
+					</ul>
+				</div>
+				<div class="tbody_content tbody_content1">
+					<div class="tbody_left">
+						<input type="checkbox"  class="check" class="check1">
+					</div>
+					<div class="tbody_sec">
+						<div class="pic">
+							<img src="./imgs/58eefdeaN8c667b63.jpg" alt="">
+						</div>
+						<span>360儿童电话手表 彩色触屏版 防丢防水GPS定位 儿<br>童手机 SE 2代 W608  天空蓝</span>
+						<ul>
+							<li>颜色：天空蓝</li><br>
+							<li>型号：儿童手表SE 2</li>
+						</ul>
+					</div>
+					<div class="tbody_price">
+						<strong>￥199</strong>
+					</div>
+					<div class="tbody_num">
+						<a href="javascript:" class="jian1">-</a>
+						<input type="text" value="1" id="input">
+						<a href="javascript:" class="jia">+</a>
+					</div>
+					<div class="tbody_count">
+						<strong>￥<i class="money">199</i></strong>
+					</div>
+					<div class="tbody_opa">
+						<font class="del">删除</font>
+					</div>
+				</div>
+				<div class="tbody_content">
+					<div class="tbody_left">
+						<input type="checkbox" class="check">
+					</div>
+					<div class="tbody_sec">
+						<div class="pic">
+							<img src="./imgs/58db91abNb64555f7.jpg" alt="">
+						</div>
+						<span>【豪华套装版】360手机 N5 全网通 6GB+32GB 流光<br>金色 移动联通电信4G手机 双卡双待</span>
+						<ul>
+							<li>颜色：流光金</li><br>
+							<li>型号：豪华套装AS 5</li>
+						</ul>
+					</div>
+					<div class="tbody_price">
+						<strong>￥1549</strong>
+					</div>
+					<div class="tbody_num">
+						<a href="javascript:" class="jian">-</a>
+						<input type="text" value="1" class="input1">
+						<a href="javascript:" class="ad">+</a>
+					</div>
+					<div class="tbody_count">
+						<strong>￥<i class="money1">1549</i></strong>
+					</div>
+					<div class="tbody_opa">
+						<font class="del">删除</font>
+					</div>
+				</div>	
+			</div>
+			<div id="jiesuan">
+				<span id="goodsnum"> 已选择<strong class="allNum">0</strong>件商品</span>
+				<span id="allprice">总价：<strong>￥<i class="total">199.00</i></strong></span>
+				<span id="youhui">已优惠：<strong>￥0.00</strong></span>
+				<div id="right">去结算</div>
+			</div>
+		</div>
+	</div>
+	<!-- 评论区 -->
+	<div id="comment">
+		<p id="titl">
+			<a href="javascript:">好评</a>
+			<a href="javascript:">中评</a>
+			<a href="javascript:">差评</a>
+		</p>
+		<div id="haoping" class="xianshi">
+			<ul>
+				<li>修身款，设计简约大方，又不会像普通的衬衫那么的单调，质量也很好，洗了衣服的质地还是一样的，满意</li>
+				<li>到手了，包装的很好，很值，价格实惠，很满意，好评！</li>
+				<li>看了很多家最终选择你们家,我的朋友们都说要买</li>
+				<li>纯白衬衫，感觉还带点潮，后面的英文异常的点缀啊！ 太好看了</li>
+				<li>价有所值！物流快！客服服务态度很好！谢谢店家！</li>
+				<li>很漂亮，质量不错，价格实惠，满意 ，好评！五分！</li>
+			</ul>
+		</div>
+		<div id="zhongping">
+			<ul>
+				<li>这是中评部分</li>
+				<li>衣服面料很舒适</li>
+				<li>有味道，款式挺好</li>
+				<li>衣服还行，不过洗了会变皱，缩水。中评吧。</li>
+				<li>面料摸着挺舒服的，挺薄的跟我想象的有一点差别，不过还可以吧</li>
+				<li>那么贵，还那么薄</li>
+			</ul>
+		</div>
+		<div id="chaping">
+			<ul>
+				<li>不是纯棉的 穿了几天就起球 开始买回来是滑滑的 后面就不好了</li>
+				<li>肯定均码的，没有大小号，味道大</li>
+				<li>衣服软踏踏的 料子也不好 非常薄 和卖家说退就不理人了 我也醉了 大家都想好再买</li>
+				<li>快递很快，但是衣服不是图片那种宽大的感觉。喇叭袖，跟期待的不一样。质量还好，</li>
+				<li>质量太差，请各位朋友不要轻信</li>
+				<li>质量超级烂 扣子都没了</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 主体部分结束 -->
+	<!-- 页脚部分开始 -->
+	<div id="foot">
+		<div id="foot_nav">
+			<ul>
+				<li>
+					<span>7</span>
+					<font>7天无理由退货</font>
+				</li>
+				<li>
+					<span>15</span>
+					<font>15天免费换货</font>
+				</li>
+				<li>
+					<span>包</span>
+					<font>满99元包邮</font>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 底部导航结束 -->
+	<!-- 页脚部分开始 -->
+	<div id="contact">
+		<div class="list">
+			<dt>帮助中心</dt>
+			<dd><a href="E:\360shop\demo\login\login.html">用户登录与密码找回</a></dd>
+			<dd><a href="E:\360shop\demo\details\details.html">用户注册协议</a></dd>
+			<dd><a href="E:\360shop\demo\index\index.html">购买指南</a></dd>
+			<dd><a href="#">支付方式</a></dd>
+			<dd><a href="#">配送与说明</a></dd>
+		</div>
+		<div class="list">
+			<dt>售后服务</dt>
+			<dd><a href="#">7日无理由退货</a></dd>
+			<dd><a href="#">质量问题15日内换货</a></dd>
+			<dd><a href="#">保修条款</a></dd>
+			<dd><a href="#">售后服务运费规则</a></dd>
+		</div>
+		<div class="list">
+			<dt>联系我们</dt>
+			<dd><a href="#">400-6822-360</a></dd>
+			<dd><a href="#">400-0111-366（手机类产品）</a></dd>
+			<dd><a href="#">周一至周日 9:00-18:00</a></dd>
+			<dd><a href="#">（仅收市话费）</a></dd>
+		</div>
+		<div id="ma">
+			<div class="ma_top">
+				<div class="ma_top_left">
+				</div>
+				<div class="ma_top_right">
+					<img src="./imgs/t01d06b994b8798623c.jpg" alt="">
+				</div>
+			</div>
+			<div id="down">
+				<div class="ma_down_left">
+					<img src="./imgs/weibo_icon.png" alt="">
+				</div>
+					<div class="ma_top_right">
+					<img src="./imgs/wbewm.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<!-- 底部中间部分结束 -->
+	<!-- 最底部开始 -->
+	<p id="finish">360商城©2013-2017 360公司版权所有 京ICP备17017089号 京公网安备11000002000006号</p>
+	<!-- 最底部结束 -->
+	<script src="./jquery/jquery-1.11.2.min.js"></script>
+	<script src="./shopcar.js"></script>
+</body>
+</html>
