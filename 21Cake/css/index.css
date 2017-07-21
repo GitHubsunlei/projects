@@ -1,0 +1,84 @@
+html,body{
+	width:100%;
+	height:100%;
+}
+header{
+	height:2.5rem;
+	background:#fff;
+	line-height: 2.5rem;
+	text-align: center;
+}
+header img{width:80%;}
+header .row div:nth-child(2) img{width:20%;}
+#box3{height:2.0rem;}
+#fonts{
+	padding-top:0.7rem !important;
+	font-size:1.2rem;
+	color:#442818;
+}
+#xia ul li a{font-size:1.2rem;}
+#pic{
+	margin-top:-0.3rem;
+	width:1.4rem;
+}
+#box2{height:auto;padding:0;}
+#box2 img{width:100%;}
+#box4{
+	min-height:4.5rem;
+	height:auto;
+	padding:0;
+	text-align: center;
+	overflow: hidden;
+}
+#box4 img{
+	width:80%;
+	 margin-left:0.5rem; 
+}
+#box4 span{
+	font-size:0.6rem; 
+	margin-top:0.6rem;
+}
+#box5 {padding:0;}
+#box5 .row{margin-bottom:0.2rem;margin-left:0;margin-right:0;}
+#box5 .row div{
+	padding-left:0;
+	padding-right:0;
+}
+#box5 img{width:100%;}
+#box6{
+	height:4.0rem;
+	background:#414141;
+	margin-top:-0.2rem;
+	color:#979797;
+	text-align: center;
+	padding:0;
+}
+#box6 p{
+	margin-top:0.5rem;
+	height:1.5rem;
+	line-height: 1.5rem;
+	border:0.05rem solid #979797; 
+	font-size: 0.6rem;
+}
+#box6 #copy{font-size: 0.6rem;}
+#box7{padding:0}
+#box6 .row{
+	margin-left:0;
+	margin-right:0;
+}
+#xialaxiang{
+	height:4.0rem;
+	background:#FFFFFF;
+	line-height: 4.0rem;
+	overflow: hidden;
+	display: none;
+}
+#xialaxiang .row div{
+	font-size:0.9rem;
+}
+#box5 .row div img{
+	transition:all .3s ease;
+}
+#box5 .row div img:hover{
+	transform:scale(1.2,1.2);
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#end {
+			width: 200px;
+			height: 200px;
+			background: red;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+		
+		.u-flyer {
+			display: block;
+			width:50px;
+			width:50px;
+			position: fixed;
+			z-index: 9999;
+		}
+	
+	</style>
+		<script src="js/jquery-1.11.1.min.js"></script>
+			<script src="js/fly.js"></script>
+</head>
+
+<body>
+<img class="u-flyer" src="1.png">
+	<button>点击</button>
+	<button>点击</button>
+	<button>点击</button>
+	<button>点击</button>
+	<button>点击</button>
+	<button>点击</button>
+	<button>点击</button>
+	<button>点击</button>
+	<button>点击</button>
+	<button>点击</button>
+	<button>点击</button>
+	<button>点击</button>
+
+	<div id="end">购物车:</div>
+	<script>
+	var aBtn=document.querySelectorAll("button");
+	console.log(aBtn);
+	
+
+	// 控制器
+	for(var i=0;i<aBtn.length;i++){
+		aBtn[i].onclick=function(){
+				var flyer = $('<img class="u-flyer" src="1.png">');
+
+			
+            //鼠标在页面点击开始位置计算.
+			var top = $(window).scrollTop();
+			
+			var dh = event.pageY;
+
+			var newh = dh - top;
+
+
+			// 购物车按钮  end在那图片飘到哪
+			var oDiv = $('#end').offset();
+
+
+			var newdh = oDiv.top - top;
+
+			// 我可以设置初始,结束,图片宽度
+			flyer.fly({
+				start: {
+					left: event.pageX,
+					top: newh,
+					// width:1000,
+					// height:1000,
+					// 初始的图片样式我可以设置在class类里面
+				},
+				end: {
+					left: oDiv.left,
+					top: newdh,
+					width: 0,
+					height: 0
+				},
+				onEnd:function(){
+					console.log("OK");
+					this.destory();
+				}
+			});
+		};
+	}
+
+		function setIco(event) {
+
+            // 变量区,当前按钮,当前图片
+		
+	
+		}
+	</script>
+
+
+</body>
+
+</html>

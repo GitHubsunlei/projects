@@ -1,0 +1,139 @@
+<link rel="stylesheet" href="css/cart.css">
+<!-- 头部开始 -->
+<header class="navbar navbar-fixed-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-2" id="xiala">
+                <img ng-src="imgs/top-icon.png" alt="">
+            </div>
+            <div class="col-xs-8">
+                <img ng-src="imgs/logo.png" alt="">
+            </div>
+            <div class="col-xs-2">
+                <img ng-src="imgs/cart.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container" id="xialaxiang">
+        <div class="row">
+            <div class="col-xs-4"><a href="#/demo">首页</a></div>
+            <div class="col-xs-4"><a href="#/list">列表</a></div>
+            <div class="col-xs-4">个人</div>
+        </div>
+    </div>
+</header>
+<!-- 头部结束 -->
+<!-- 满减开始 -->
+<div class="container-fluid" id="cart1">
+    <span>·满100元免配送服务费·</span>
+</div>
+<div class="container" id="cart2">
+    <div class="row"  ng-repeat="item in cart">
+        <div class="col-xs-4">
+            <img ng-src="{{item.img}}">
+        </div>
+        <div class="col-xs-8">
+            <h2>{{item.name}}</h2>
+            <p>{{item.describe}}</p>
+            <p>规格：1.0磅</p>
+            <p class="price">{{item.num*item.price|currency:"￥"}}
+                <button class="btn btn-sm" ng-click="set(item.goodsId,false)">-</button>
+                {{item.num}}
+                <button class="btn btn-sm" ng-click="set(item.goodsId,true)">+</button>
+            </p>
+        </div>
+    </div>
+    <p ng-show="!cart.length" id="empty">
+        <img src="imgs/cart-empty (1).png" alt="">
+    </p>
+</div>
+
+
+<div class="clearfix"></div>
+<div class="container-fluid">
+    <div class="row" id="cart3">
+        <div class="col-xs-2" id="cart4">
+            <img ng-src="imgs/can1.jpg" alt="">
+        </div>
+        <div class="col-xs-10">每份含免费餐具5套</div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row" id="cart5">
+        <div class="col-xs-2">
+            <img ng-src="imgs/can2.jpg" alt="">
+        </div>
+        <div class="col-xs-8" id="birthday">+添加生日牌</div>
+        <div class="col-xs-1">></div>
+    </div>
+</div>
+<!-- 满减结束 -->
+<div class="container-fluid" id="cart1" style="margin-top:0;">
+    <span>· 搭配商品 ·</span>
+</div>
+<div class="container-fluid" id="cart6">
+    <dl class="pull-left">
+        <dt>
+            <img ng-src="imgs/la1.jpg" alt="">
+        </dt>
+        <dd>方形蜡烛</dd>
+        <dd>￥5.00
+            <span>
+                <img ng-src="imgs/list-cart.png" alt="">
+            </span>
+        </dd>
+    </dl>
+    <dl class="pull-right">
+        <dt>
+            <img ng-src="imgs/can1.jpg" alt="">
+        </dt>
+        <dd>餐具套餐</dd>
+        <dd>￥0.50
+            <span>
+                    <img ng-src="imgs/list-cart.png" alt="">
+                </span>
+        </dd>
+    </dl>
+    <dl class="pull-left">
+        <dt>
+            <img ng-src="imgs/la1.jpg" alt="">
+        </dt>
+        <dd>方形蜡烛</dd>
+        <dd>￥5.00
+            <span>
+                <img ng-src="imgs/list-cart.png" alt="">
+            </span>
+        </dd>
+    </dl>
+    <dl class="pull-right">
+        <dt>
+            <img ng-src="imgs/can1.jpg" alt="">
+        </dt>
+        <dd>餐具套餐</dd>
+        <dd>￥0.50
+            <span>
+                <img ng-src="imgs/list-cart.png" alt="">
+            </span>
+        </dd>
+    </dl>
+</div>
+<div class="clearfix"></div>
+<div class="container-fluid" id="jiesuanlan">
+    <div class="row">
+        <div class="col-xs-4">
+            <span>商品数量</span><strong>{{cart.length}}</strong>
+        </div>
+        <div class="col-xs-6">
+            <span>总价</span>
+            <strong>{{sumPrice()|currency:"￥"}}</strong>
+        </div>
+        <div class="col-xs-2" id="jiesuan">
+            <span>结算</span>
+        </div>
+    </div>
+</div>
+<script>
+    $('#xiala').click(function() {
+        $('#xialaxiang').stop().slideToggle();
+    });
+</script>

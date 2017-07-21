@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/resp.js"></script>
+</head>
+
+<body ng-controller="cont">
+    <div ng-view></div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular-route.js"></script>
+    <script src="js/fly.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+    var app = angular.module("myapp", ['ngRoute'], routeConfig);
+
+    function routeConfig($routeProvider) {
+        $routeProvider
+            .when("/", {
+                templateUrl: "demo.html"
+            })
+            .when("/list", {
+                templateUrl: "list.html"
+            })
+            .when("/cart", {
+                templateUrl: "cart.html"
+            })
+            .otherwise({
+                templateUrl: "demo.html"
+            })
+    };
+    app.directive("sl", function() {
+        var config = {
+            restrict: "AE",
+            replace: true,
+            template: "<div></div>",
+            compile: function() {
+                var mySwiper = new Swiper('.swiper-container', {
+                    autoplay: 5000,
+                    // 如果需要分页器
+                    pagination: '.swiper-pagination',
+                    autoplayDisableOnInteraction: false,
+                    // 如果需要前进后退按钮
+                    nextButton: '.swiper-button-next',
+                    prevButton: '.swiper-button-prev',
+                });
+            }
+
+        };
+        return config;
+    });
+    app.directive("sll", function() {
+        var config = {
+            restrict: "AE",
+            replace: true,
+            template: "<div></div>",
+            compile: function() {
+                var mySwiper = new Swiper('.swiper-container', {
+                    autoplay: 5000, //可选选项，自动滑动
+                    watchSlidesProgress: true,
+                    watchSlidesVisibility: true,
+                    slidesPerView: 3,
+                })
+            }
+
+        };
+        return config;
+    });
+    app.controller('cont', ['$scope', '$http', function($scope, $http) {
+        $http({
+            method: "POST",
+            url: "./php/index.php",
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            }
+
+        }).then(function(succ) {
+            // console.log(succ.data);
+            $scope.data = succ.data;
+            angular.forEach($scope.data, function(item, index) {
+                // console.log(item);
+                item.num = 0;
+                item.price = -(-(item.price));
+            })
+        }, function(err) {
+
+        });
+        $scope.cart = [];
+        $scope.set = function(goodsId, bool) {
+            // console.log(goodsId)
+            angular.forEach($scope.data, function(item, index) {
+                // console.log(item)
+                if (goodsId == item.goodsId) {
+                    if (bool) {
+                        if (item.num == 0) {
+                            item.num = 1;
+                            $scope.cart.push(item);
+                        } else {
+                            item.num++;
+                        }
+                    } else {
+                        item.num--;
+                        item.num = item.num <= 0 ? 0 : item.num;
+                    }
+                }
+            });
+        };
+        $scope.sumPrice = function() {
+            var allPrice = 0;
+            angular.forEach($scope.cart, function(item, index) {
+                // 计算总价 
+                allPrice += item.num * item.price;
+                if (item.num <= 0) {
+                    $scope.cart.splice(index, 1)
+                };
+            })
+            return allPrice;
+        }
+
+
+
+        // 控制器
+        $scope.fly = function() {
+          angular.forEach($scope.data,function(){
+            var flyer = $('<img class="u-flyer" src="imgs/list-cart.png">');
+                    //鼠标在页面点击开始位置计算.
+                    var top = $(window).scrollTop();
+                    var dh = event.pageY;
+                    var newh = dh - top;
+                    // 购物车按钮  end在那图片飘到哪
+                    var oDiv = $('#end').offset();
+                    var newdh = oDiv.top - top;
+                    // 我可以设置初始,结束,图片宽度
+                    flyer.fly({
+                        start: {
+                            left: event.pageX,
+                            top: newh,
+                            // width:1000,
+                            // height:1000,
+                            // 初始的图片样式我可以设置在class类里面
+                        },
+                        end: {
+                            left: oDiv.left,
+                            top: newdh,
+                            width: 0,
+                            height: 0
+                        },
+                        onEnd: function() {
+                            this.destory();
+                        }
+                    });
+                });
+      }
+        function setIco(event) {
+
+            // 变量区,当前按钮,当前图片
+
+
+        }
+    }]);
+    </script>
+</body>
+
+</html>

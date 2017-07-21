@@ -1,0 +1,121 @@
+<!-- header start-->
+<header class="navbar navbar-fixed-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-2" id="xiala">
+                <img ng-src="imgs/top-icon.png" alt="">
+            </div>
+            <div class="col-xs-8">
+                <img ng-src="imgs/logo.png" alt="">
+            </div>
+            <div class="col-xs-2">
+
+            <a href="#/cart"><img ng-src="imgs/cart.png" alt=""></a>    
+            </div>
+        </div>
+    </div>
+    <div class="container" id="xialaxiang">
+        <div class="row">
+            <div class="col-xs-4">首页</div>
+            <div class="col-xs-4"><a href="#/list">列表</a></div>
+            <div class="col-xs-4">个人</div>
+        </div>
+    </div>
+</header>
+<!-- 轮播部分开始 -->
+<div sl></div>
+<div class="container-fluid" id="box7">
+    <div class="swiper-container" id="box2">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img ng-src="imgs/1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img ng-src="imgs/2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img ng-src="imgs/3.jpg" alt="">
+            </div>
+        </div>
+        <!-- 如果需要分页器-->
+        <div class="swiper-pagination"></div>
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</div>
+<!-- 轮播部分结束 -->
+<!-- 推荐部分开始 -->
+<div class="container-fluid" id="box4">
+    <div class="row">
+        <div class="col-xs-3">
+            <img ng-src="imgs/dan1.jpg" alt="">
+            <span>推荐</span>
+        </div>
+        <div class="col-xs-3">
+            <img ng-src="imgs/dan2.jpg" alt="">
+            <span>生日专区</span>
+        </div>
+        <div class="col-xs-3">
+            <img ng-src="imgs/dan3.png" alt="">
+            <span>蛋糕</span>
+        </div>
+        <div class="col-xs-3">
+            <img ng-src="imgs/dan4.png" alt="">
+            <span>礼品盒</span>
+        </div>
+    </div>
+</div>
+<!-- 推荐部分结束 -->
+<!-- 风景部分开始 -->
+<div class="container-fluid" id="box5">
+    <div class="row">
+        <div class="col-xs-12">
+            <img ng-src="imgs/p5.jpg" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <img ng-src="imgs/p1.jpg" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <img ng-src="imgs/p2.jpg" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <img ng-src="imgs/p3.jpg" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <img ng-src="imgs/p4.jpg" alt="">
+        </div>
+    </div>
+</div>
+<!-- 风景部分结束 -->
+<!-- footer部分开始 -->
+<div class="container-fluid" id="box6">
+    <div class="row">
+        <div class="col-xs-4">
+            <p>下载App</p>
+        </div>
+        <div class="col-xs-4">
+            <p>联系我们</p>
+        </div>
+        <div class="col-xs-4">
+            <p>全站公告</p>
+        </div>
+    </div>
+    <div id="copy">Copyright© 21Cake蛋糕官网商城 2007-2017,
+        <br>版权所有京ICP备14006254号-1</div>
+</div>
+<!-- footer部分结束 -->
+
+<script>
+    $('#xiala').click(function() {
+        $('#xialaxiang').stop().slideToggle();
+    });
+</script>

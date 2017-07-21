@@ -1,0 +1,140 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#cart1 {
+    height: 2.0rem;
+    background: #F8F8F8;
+    margin-top: 2.5rem;
+    text-align: center;
+    line-height: 2.0rem;
+}
+
+#cart1 span {
+    font-size: 0.6rem;
+    color: #442818;
+}
+
+#cart2 {
+    height: 6.0rem;
+    font-size: 0.6rem;
+}
+
+#cart2 p:last-child {
+    font-size: 0.8rem;
+    margin-top: 1.0rem;
+}
+
+#cart2 img {
+    width:100%;
+}
+
+#cart2 .row div {
+    margin-top: 0.5rem;
+}
+
+.price {
+    margin-top: 1rem;
+}
+
+.btn {
+    width: 1.5rem;
+    font-size: 1rem;
+}
+
+#cart3 {
+    height: 2.3rem;
+}
+
+#cart3 img {
+    display: block;
+    width: 130%;
+    height: 100%;
+}
+
+#cart4 {
+    height: 2.3rem;
+    line-height: 2.3rem;
+}
+
+#cart3 div:last-child {
+    font-size: 0.6rem;
+    margin-top: 0.8rem;
+}
+
+#cart5 {
+    height: 1.5rem;
+    line-height: 1.5rem;
+}
+
+#cart5 img {
+    width: 130%;
+}
+
+#cart6 {
+    background: #F8F8F8;
+    padding: 0;
+}
+
+#cart6 img {
+    width: 60%;
+    margin-left: 1.5rem;
+}
+
+#cart6 dl dd {
+    font-size: 0.6rem;
+    width: 5.0rem;
+    margin-left: 0.5rem;
+}
+
+#cart6 dl {
+    width: 49%;
+    background: #fff;
+    margin-bottom: 0.5rem;
+}
+
+#cart6 dl dd span {
+    margin-left: 3.0rem;
+}
+
+#cart6 dl dd span img {
+    width: 15%;
+    margin-top: -2.0rem;
+    margin-left: 2.5rem;
+}
+
+#jiesuanlan {
+    height: 2.0rem;
+    line-height: 2.0rem;
+    position: fixed;
+    bottom:0;
+    left:0;
+    background:#F8F8F8;
+    width:100%;
+}
+
+#jiesuanlan span {
+    font-size: 0.6rem;
+}
+
+#jiesuanlan strong {
+    font-size: 0.8rem;
+    color: #f00;
+}
+
+#jiesuan {
+    height: 100%;
+    background: #442818;
+    text-align: center;
+    color: #fff;
+}
+
+#birthday {
+    font-size: 0.6rem;
+}
+#empty img{
+    width:50%;
+    margin-left:4.0rem;
+    margin-top:-2.0rem;
+}

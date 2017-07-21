@@ -1,0 +1,86 @@
+<link rel="stylesheet" href="css/list.css">
+<!-- 头部开始 -->
+<header class="navbar navbar-fixed-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-2" id="xiala">
+                <img ng-src="imgs/top-icon.png" alt="">
+            </div>
+            <div class="col-xs-8">
+               <input type="text" placeholder="请输入商品名称" id="int" class="form-control" ng-model="str">
+            </div>
+            <div class="col-xs-2">
+                <a href="#/cart">
+                    <img ng-src="imgs/cart.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="xialaxiang">
+        <div class="row">
+            <div class="col-xs-4"><a href="#/demo">首页</a></div>
+            <div class="col-xs-4">列表</div>
+            <div class="col-xs-4">个人</div>
+        </div>
+    </div>
+</header>
+<!-- 头部结束 -->
+<!-- 导航开始 -->
+<div sll></div>
+<div class="container-fluid" id="lis">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">推荐</div>
+            <div class="swiper-slide">生日专区</div>
+            <div class="swiper-slide">蛋糕</div>
+            <div class="swiper-slide">下午茶</div>
+            <div class="swiper-slide">设计师礼品</div>
+            <div class="swiper-slide">全国配送</div>
+            <div class="swiper-slide">企业专区</div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" id="lis1">
+    <h3>蛋糕</h3>
+    <span>新鲜乳脂奶油蛋糕</span>
+</div>
+<!-- 导航结束 -->
+<!-- 列表开始 -->
+<div class="container-fluid" id="lis2">
+    <div class="row" ng-repeat="item in data|filter:{describe:str}">
+        <div class="col-xs-12">
+            <img ng-src="{{item.img}}" alt="">
+            <p>{{item.name}}</p>
+            <p>{{item.describe}}</p>
+            <span>{{item.price|currency:"￥"}}
+                <span ng-click="set(item.goodsId,true)">
+                    <img ng-src="imgs/list-cart.png" alt="" ng-click="fly()">
+                </span>
+            </span>
+        </div>
+    </div>
+</div>
+<div id="end"></div>
+<!-- 列表结束 -->
+<!-- footer部分开始 -->
+<div class="container-fluid" id="box6">
+    <div class="row">
+        <div class="col-xs-4">
+            <p>下载App</p>
+        </div>
+        <div class="col-xs-4">
+            <p>联系我们</p>
+        </div>
+        <div class="col-xs-4">
+            <p>全站公告</p>
+        </div>
+    </div>
+    <div id="copy">Copyright© 21Cake蛋糕官网商城 2007-2017,
+        <br>版权所有京ICP备14006254号-1</div>
+</div>
+<!-- footer部分结束 -->
+<script>
+    $('#xiala').click(function() {
+        $('#xialaxiang').stop().slideToggle();
+    });
+</script>

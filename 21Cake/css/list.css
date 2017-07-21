@@ -1,0 +1,74 @@
+#lis {
+    margin-top: 3rem;
+    height: 1.5rem;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+#lis .swiper-container .swiper-wrapper div {
+    font-size: 0.9rem;
+}
+
+#lis1 {
+    height: 2.4rem;
+    background: #FBF9F6;
+    text-align: center;
+}
+
+#lis1 h3 {
+    font-size: 0.9rem;
+    margin-top: 0.4rem;
+}
+
+#lis1 span {
+    font-size: 0.6rem;
+    color: #D5BFA7;
+}
+
+#lis2 img {
+    width: 100%;
+}
+
+#lis2 {
+    font-size: 0.6rem;
+}
+
+#lis2 span img {
+    width: 8%;
+    margin-left: 8.5rem;
+}
+
+#box6 {
+    margin-top: 0.5rem;
+}
+
+
+/* 飞翔的小人 */
+
+#end {
+    width: 10px;
+   	height: 10px; 
+    background: red;
+    position: fixed;
+    top: 0;
+    right: 0.5rem;
+}
+
+.u-flyer {
+    display: block;
+    width: 50px;
+    width: 50px;
+    position: fixed;
+    z-index: 9999;
+}
+#lis2 .row div span img{
+    transition:all .3s ease;
+}
+#lis2 .row div  span img:hover{
+    transform:scale(1.3,1.3);
+}
+#int{
+    height:1.5rem;
+    margin-top:0.5rem;
+    font-size:0.7rem;
+}
